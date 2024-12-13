@@ -2,27 +2,27 @@ import {
   SliceSimulator,
   SliceSimulatorParams,
   getSlices,
-} from "@slicemachine/adapter-next/simulator";
-import { SliceZone } from "@prismicio/react";
-import { redirect } from "next/navigation";
+} from '@slicemachine/adapter-next/simulator'
+import { SliceZone } from '@prismicio/react'
+import { redirect } from 'next/navigation'
 
-import { components } from "@/slices";
+import { components } from '@/slices'
 
-export default function SliceSimulatorPage({
+export default async function SliceSimulatorPage({
   searchParams,
 }: SliceSimulatorParams & { searchParams: { secret?: string } }) {
   if (
     process.env.SLICE_SIMULATOR_SECRET &&
     searchParams.secret !== process.env.SLICE_SIMULATOR_SECRET
   ) {
-    redirect("/");
+    redirect('/')
   }
 
-  const slices = getSlices(searchParams.state);
+  const slices = getSlices((await searchParams).state)
 
   return (
     <SliceSimulator>
       <SliceZone slices={slices} components={components} />
     </SliceSimulator>
-  );
+  )
 }
