@@ -1,13 +1,14 @@
-# Prismic + Next.js Multi-Page Starter
+# SaaS Starter
 
-This page covers how to use **Prismic + Next.js Multi-Page Starter** with Prismic.
+This is a SaaS starter template built with Next.js and Prismic CMS. It provides a solid foundation for building modern SaaS applications with content management capabilities.
 
 - **Demo**: [Open live demo][live-demo]
 - **Learn more about Prismic and Next.js**: [Prismic Next.js Documentation][prismic-docs]
 
 &nbsp;
 
-<img src="https://user-images.githubusercontent.com/8601064/166617932-eaaa1643-f086-4909-9868-56234f8da98d.png" alt="Screenshots of the site seen on deskop and mobile browsers" />
+TODO: UPDATE SCREENSHOT
+![Screenshots of the site seen on desktop and mobile browsers](https://user-images.githubusercontent.com/8601064/166617932-eaaa1643-f086-4909-9868-56234f8da98d.png)
 
 &nbsp;
 
@@ -111,8 +112,6 @@ If you change or add to your Custom Types, you'll need to update your route hand
 
 For the official Prismic documentation, see [Prismic's guide for Next.js](https://prismic.io/docs/technologies/nextjs) or the [technical references for the installed Prismic packages](https://prismic.io/docs/technologies/technical-references).
 
-[prismic]: https://prismic.io/
 [prismic-docs]: https://prismic.io/docs/technologies/nextjs
 [prismic-sign-up]: https://prismic.io/dashboard/signup
-[nextjs]: https://nextjs.org/
 [live-demo]: https://nextjs-starter-prismic-multi-page.vercel.app/
